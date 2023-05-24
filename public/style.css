@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #512888;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#canvas {
+    display: block;
+    background-color: #fff5f5;
+    margin: auto;
+}
+
+#title {
+    text-align: center;
+    color: #ffffff;
+}
+
+#toolbar {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#clearBtn {
+    padding: 6px 20px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+#colorPicker {
+    padding: 2px 3px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+label {
+    color: #ffffff;
+}
+
+input,
+select {
+    margin: 0 1.5em 0 0.5em;
+}
+
+
+@media (max-width: 950px) {
+    #toolbar {
+        position: static;
+    }
+}
