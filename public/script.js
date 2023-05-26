@@ -13,6 +13,7 @@ let color = sessionStorage.getItem( 'color' ) || '#000000';
 let size = sessionStorage.getItem( 'size' ) || 5;
 
 
+// change event for color picker
 let colorPicker = document.getElementById( 'colorPicker' );
 colorPicker.addEventListener( 'change', () => {
     color = colorPicker.value;
@@ -20,12 +21,16 @@ colorPicker.addEventListener( 'change', () => {
 
 } );
 
+
+// change event for size dropdown
 let sizeDropdown = document.getElementById( 'sizeDropdown' );
 sizeDropdown.addEventListener( 'change', () => {
     size = sizeDropdown.value;
     sessionStorage.setItem( 'size', size );
 } );
 
+
+// retrieve from session if already exists
 colorPicker.value = sessionStorage.getItem( 'color' ) || '#000000';
 sizeDropdown.value = sessionStorage.getItem( 'size' ) || 5;
 
