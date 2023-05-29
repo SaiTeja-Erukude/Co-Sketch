@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Sketch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h3>Welcome to Co-Sketch!</h3>
+    </div>
+    <div id="toolbar">
+        <label for="colorPicker">Choose a color:</label>
+        <input type="color" id="colorPicker" name="colorPicker">
+
+        <label for="sizeDropdown">Size:</label>
+        <select id="sizeDropdown">
+            <option value=5>5</option>
+            <option value=10>10</option>
+            <option value=15>15</option>
+            <option value=20>20</option>
+            <option value=25>25</option>
+        </select>
+
+        <button id="clearBtn">Clear</button>
+    </div>
+    <div>
+        <h4 id="canvasRoomID">Room ID: XXXX</h4>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="canvas.js"></script>
+</body>
+
+</html>

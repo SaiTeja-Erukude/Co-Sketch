@@ -13,24 +13,20 @@
     <div id="title">
         <h3>Welcome to Co-Sketch!</h3>
     </div>
-    <div id="toolbar">
-        <label for="colorPicker">Choose a color:</label>
-        <input type="color" id="colorPicker" name="colorPicker">
 
-        <label for="sizeDropdown">Size:</label>
-        <select id="sizeDropdown">
-            <option value=5>5</option>
-            <option value=10>10</option>
-            <option value=15>15</option>
-            <option value=20>20</option>
-            <option value=25>25</option>
-        </select>
-
-        <button id="clearBtn">Clear</button>
+    <div class="container">
+        <input type="text" id="roomID" class="input-field" required placeholder="Enter Room ID here">
+        <button class="button" id="joinRoomBtn">Join Room</button>
     </div>
-    <canvas id="canvas"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-    <script src="script.js"></script>
+
+    <div class="container">
+        <p>--------- OR ---------</p>
+    </div>
+
+    <div class="container">
+        <button class="button" id="createRoomBtn">Create Room</button>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
